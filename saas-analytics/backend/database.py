@@ -1,9 +1,9 @@
-import os
 import pandas as pd
 import streamlit as st
 
 from sqlalchemy import create_engine
 from sqlalchemy import text
+
 
 DATABASE_URL = st.secrets["DATABASE_URL"]
 
