@@ -3,7 +3,7 @@ import streamlit as st
 
 def render_settings():
 
-    st.title("⚙️ Settings")
+    st.title(" Settings")
 
     dark_mode = st.toggle(
         "Dark Mode",
