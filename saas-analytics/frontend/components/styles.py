@@ -412,17 +412,8 @@ def load_css():
     footer {
         visibility: hidden;
     }
-    .main {
-    opacity: 1 !important;
-    }
-    
-    .block-container {
+    * {
         opacity: 1 !important;
     }
-    
-    section.main > div {
-        opacity: 1 !important;
-    }
-    </style>
     """,
     unsafe_allow_html=True)
