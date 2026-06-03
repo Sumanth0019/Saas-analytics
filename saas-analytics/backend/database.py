@@ -1,14 +1,15 @@
 import os
 import pandas as pd
+import streamlit as st
 
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy import text
 
-load_dotenv()
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
 engine = create_engine(
-    os.getenv("DATABASE_URL"),
+    DATABASE_URL,
     pool_pre_ping=True
 )
 
