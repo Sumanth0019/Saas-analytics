@@ -5,7 +5,6 @@ plotly
 scikit-learn
 joblib
 supabase
-python-dotenv
 sqlalchemy
 psycopg2-binary
 openpyxl
