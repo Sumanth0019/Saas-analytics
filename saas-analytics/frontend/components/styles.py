@@ -89,16 +89,12 @@ def load_css():
 
     .hero h1 {
 
-        font-size: 3rem;
-
-        margin-bottom: .4rem;
+        color: white !important;
     }
 
     .hero p {
 
-        opacity: .9;
-
-        font-size: 1.1rem;
+        color: #cbd5e1 !important;
     }
 
     /* =====================================
@@ -195,16 +191,14 @@ def load_css():
 
     .kpi-card h3 {
 
-        color: #cbd5e1;
-
-        font-size: 1rem;
+        color: #e2e8f0 !important;
+        font-weight: 600;
     }
 
     .kpi-card h1 {
 
-        color: white;
-
-        font-size: 2rem;
+        color: #ffffff !important;
+        font-weight: 700;
     }
 
     .kpi-card p {
@@ -418,7 +412,17 @@ def load_css():
     footer {
         visibility: hidden;
     }
-
+    .main {
+    opacity: 1 !important;
+    }
+    
+    .block-container {
+        opacity: 1 !important;
+    }
+    
+    section.main > div {
+        opacity: 1 !important;
+    }
     </style>
     """,
     unsafe_allow_html=True)
