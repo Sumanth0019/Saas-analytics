@@ -124,7 +124,7 @@ if not st.session_state.get(
 from components.styles import load_css
 from components.sidebar import render_sidebar
 from components.navbar import render_navbar
-from components.theme_switcher import render_theme_switcher
+#from components.theme_switcher import render_theme_switcher
 
 # ==================================================
 # PAGES
@@ -160,7 +160,7 @@ load_css()
 # THEME
 # ==================================================
 
-render_theme_switcher()
+#render_theme_switcher()
 
 # ==================================================
 # SIDEBAR
