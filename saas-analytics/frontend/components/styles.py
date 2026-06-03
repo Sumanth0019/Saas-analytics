@@ -111,8 +111,7 @@ def load_css():
                 0.06
             );
 
-        backdrop-filter:
-            blur(14px);
+        backdrop-filter:none;
 
         border:
             1px solid rgba(
@@ -143,16 +142,9 @@ def load_css():
 
     .kpi-card {
 
-        background:
-            rgba(
-                255,
-                255,
-                255,
-                .08
-            );
+        background:rgba(15, 23, 42, 0.9);
 
-        backdrop-filter:
-            blur(12px);
+        backdrop-filter:none;
 
         border:
             1px solid rgba(
@@ -214,13 +206,7 @@ def load_css():
 
     div[data-testid="metric-container"] {
 
-        background:
-            rgba(
-                255,
-                255,
-                255,
-                0.06
-            );
+        background:rgba(15, 23, 42, 0.9);
 
         border-radius: 16px;
 
