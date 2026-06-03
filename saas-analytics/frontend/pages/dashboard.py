@@ -51,7 +51,7 @@ def render_dashboard():
 
 def render_kpi_section(df):
 
-    st.subheader("📈 Executive Dashboard")
+    st.subheader(" Executive Dashboard")
 
     metrics = [
         ("Customers", f"{total_customers(df):,}", "+4.2%", ""),
