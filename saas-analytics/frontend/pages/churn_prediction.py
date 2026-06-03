@@ -9,7 +9,7 @@ from ml.predict import (
 
 def render_churn_prediction():
 
-    st.title("🔮 Customer Churn Prediction")
+    st.title(" Customer Churn Prediction")
 
     st.markdown(
         """
@@ -142,7 +142,7 @@ def render_churn_prediction():
     st.divider()
 
     if st.button(
-        "🚀 Predict Churn",
+        " Predict Churn",
         use_container_width=True
     ):
 
@@ -261,7 +261,7 @@ def render_churn_prediction():
             st.divider()
 
             st.subheader(
-                "📋 Customer Profile"
+                " Customer Profile"
             )
 
             st.dataframe(
