@@ -59,13 +59,12 @@ def load_css():
 
     .hero {
 
-        background:
-            linear-gradient(
-                135deg,
-                #6366f1,
-                #8b5cf6,
-                #ec4899
-            );
+        background: linear-gradient(
+            135deg,
+            #0f172a,
+            #1e293b
+        );
+        backdrop-filter: none;
 
         padding: 3rem;
 
