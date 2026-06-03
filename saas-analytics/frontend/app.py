@@ -101,6 +101,7 @@ if "code" in params:
 if "logged_in" not in st.session_state:
 
     st.session_state.logged_in = False
+    restore_session()
 
 # ==================================================
 # SHOW LOGIN PAGE
