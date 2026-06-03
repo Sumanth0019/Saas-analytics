@@ -397,8 +397,11 @@ def load_css():
     footer {
         visibility: hidden;
     }
-    * {
+    .hero,
+    .kpi-card,
+    .dashboard-container,
+    .main {
         opacity: 1 !important;
+        filter: none !important;
+        backdrop-filter: none !important;
     }
-    """,
-    unsafe_allow_html=True)
