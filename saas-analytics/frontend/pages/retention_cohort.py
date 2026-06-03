@@ -8,7 +8,7 @@ from backend.services import get_customers
 def render_retention_cohort():
 
     st.title(
-        "🔄 Customer Retention Analysis"
+        " Customer Retention Analysis"
     )
 
     df = get_customers()
@@ -153,8 +153,8 @@ def render_retention_cohort():
     # RETENTION TABLE
     # =========================
 
-    st.subheader(
-        "📊 Retention Summary"
+    st. subheader(
+        " Retention Summary"
     )
 
     st.dataframe(
@@ -163,7 +163,7 @@ def render_retention_cohort():
     )
 
     st.download_button(
-        "📥 Export Retention Report",
+        " Export Retention Report",
         retention.to_csv(
             index=False
         ),
