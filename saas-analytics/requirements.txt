@@ -1,10 +1,11 @@
 streamlit
 pandas
 numpy
+plotly
+scikit-learn
+joblib
+supabase
+python-dotenv
 sqlalchemy
 psycopg2-binary
-scikit-learn
-xgboost
-joblib
-plotly
-faker
+openpyxl
