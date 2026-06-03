@@ -80,7 +80,7 @@ def login_with_google():
                     "provider": "google",
                     "options": {
                         "redirect_to":
-                        "http://localhost:8501"
+                        "https://saas-analytics.streamlit.app/"
                     }
                 }
             )
