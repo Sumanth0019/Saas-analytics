@@ -40,7 +40,8 @@ st.markdown("""
 from backend.supabase_client import supabase
 
 from backend.auth import (
-    logout
+    logout,
+    restore_session
 )
 
 from frontend.auth.auth_page import (
