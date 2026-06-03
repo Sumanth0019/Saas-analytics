@@ -4,7 +4,7 @@ numpy
 plotly
 scikit-learn
 joblib
-supabase
+supabase>=2.4.0
 sqlalchemy
 psycopg2-binary
 openpyxl
