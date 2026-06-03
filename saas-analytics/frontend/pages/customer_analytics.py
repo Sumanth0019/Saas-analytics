@@ -7,7 +7,7 @@ from backend.services import get_customers
 
 def render_customer_analytics():
 
-    st.title("👥 Customer Analytics")
+    st.title(" Customer Analytics")
 
     df = get_customers()
 
@@ -19,7 +19,7 @@ def render_customer_analytics():
     # FILTERS
     # ==========================================
 
-    st.subheader("🔍 Filters")
+    st.subheader(" Filters")
 
     f1, f2, f3, f4 = st.columns(4)
 
@@ -216,7 +216,7 @@ def render_customer_analytics():
     # ==========================================
 
     st.subheader(
-        "📊 Customer Value Analysis"
+        " Customer Value Analysis"
     )
 
     fig = px.scatter(
@@ -239,7 +239,7 @@ def render_customer_analytics():
     # SEARCH
     # ==========================================
 
-    st.subheader("🔎 Search Customer")
+    st.subheader(" Search Customer")
 
     search = st.text_input(
         "Customer ID"
