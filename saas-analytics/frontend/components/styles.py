@@ -32,10 +32,8 @@ def load_css():
     html,
     body,
     p,
-    span,
     label,
     small,
-    div,
     h1,
     h2,
     h3,
@@ -311,13 +309,58 @@ def load_css():
     ===================================== */
 
     .stTextInput input,
-    .stNumberInput input,
+    .stNumberInput input {
+    
+        color: white !important;
+        border-radius: 10px;
+    }
+    
     .stSelectbox div,
     .stMultiSelect div {
-
-        color: white !important;
-
+    
+        color: black !important;
         border-radius: 10px;
+    }
+
+    /* =====================================
+       SELECTBOX FIX
+    ===================================== */
+    
+    /* Selected value */
+    .stSelectbox div[data-baseweb="select"] span {
+        color: #000000 !important;
+    }
+    
+    /* Dropdown container */
+    div[role="listbox"] {
+        background: white !important;
+    }
+    
+    /* Dropdown options */
+    div[role="option"] {
+        color: #000000 !important;
+        background: white !important;
+    }
+    
+    /* Hover option */
+    div[role="option"]:hover {
+        background: #f1f5f9 !important;
+        color: #000000 !important;
+    }
+    
+    /* Selectbox text */
+    .stSelectbox div[data-baseweb="select"] {
+        color: #000000 !important;
+    }
+    
+    /* Multi-select */
+    .stMultiSelect span {
+        color: #000000 !important;
+    }
+    
+    /* Input dropdown text */
+    .stSelectbox input {
+        color: #000000 !important;
     }
 
     /* =====================================
