@@ -54,12 +54,12 @@ def render_kpi_section(df):
     st.subheader("📈 Executive Dashboard")
 
     metrics = [
-        ("Customers", f"{total_customers(df):,}", "+4.2%", "👥"),
-        ("Active", f"{active_customers(df):,}", "+2.1%", "🟢"),
-        ("Revenue", f"${total_revenue(df):,.0f}", "+8.4%", "💰"),
-        ("Retention", f"{retention_rate(df):.1f}%", "+1.8%", "📈"),
-        ("Churn", f"{churn_rate(df):.1f}%", "-1.2%", "⚠️"),
-        ("Avg CLTV", f"${average_cltv(df):,.0f}", "+3.5%", "🎯"),
+        ("Customers", f"{total_customers(df):,}", "+4.2%", ""),
+        ("Active", f"{active_customers(df):,}", "+2.1%", ""),
+        ("Revenue", f"${total_revenue(df):,.0f}", "+8.4%", ""),
+        ("Retention", f"{retention_rate(df):.1f}%", "+1.8%", ""),
+        ("Churn", f"{churn_rate(df):.1f}%", "-1.2%", ""),
+        ("Avg CLTV", f"${average_cltv(df):,.0f}", "+3.5%", ""),
     ]
 
     cols = st.columns(len(metrics))
@@ -84,7 +84,7 @@ def render_business_analytics(df):
 
     with left:
 
-        st.subheader("📊 Business Analytics")
+        st.subheader(" Business Analytics")
 
         chart1, chart2 = st.columns(2)
 
@@ -125,7 +125,7 @@ def render_business_analytics(df):
 
 def render_customer_insights(df):
 
-    st.subheader("📊 Customer Insights")
+    st.subheader(" Customer Insights")
 
     c1, c2 = st.columns(2)
 
@@ -176,7 +176,7 @@ def render_customer_insights(df):
 
 def render_customer_table(df):
 
-    st.subheader("📋 Customer Snapshot")
+    st.subheader(" Customer Snapshot")
 
     cols = [
         "CustomerID",
