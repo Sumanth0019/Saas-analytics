@@ -190,29 +190,29 @@ if logout_clicked:
 
 PAGE_ROUTES = {
 
-    "📈 Dashboard":
+    " Dashboard":
         render_dashboard,
 
-    "📂 Upload & Analyze":
+    " Upload & Analyze":
         render_upload_analysis,
 
-    "👥 Customer Analytics":
+    " Customer Analytics":
         render_customer_analytics,
 
-    "🔮 Churn Prediction":
+    " Churn Prediction":
         render_churn_prediction,
 
-    "🎯 Segmentation":
+    " Segmentation":
         render_segmentation,
 
 
-    "🔄 Retention Cohort":
+    " Retention Cohort":
         render_retention_cohort,
 
-    "👤 Profile":
+    " Profile":
         render_profile,
 
-    "⚙️ Settings":
+    " Settings":
         render_settings,
 }
 
