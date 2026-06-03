@@ -11,7 +11,7 @@ from ml.predict import (
 
 def render_upload_analysis():
 
-    st.title("📂 Upload & Analyze")
+    st.title(" Upload & Analyze")
 
     uploaded = st.file_uploader(
         "Upload CSV or Excel File",
@@ -49,7 +49,7 @@ def render_upload_analysis():
     # DATASET OVERVIEW
     # ==========================================
 
-    st.subheader("📊 Dataset Overview")
+    st.subheader(" Dataset Overview")
 
     c1, c2, c3, c4 = st.columns(4)
 
@@ -77,7 +77,7 @@ def render_upload_analysis():
     # PREVIEW
     # ==========================================
 
-    st.subheader("📋 Data Preview")
+    st.subheader(" Data Preview")
 
     st.dataframe(
         df.head(20),
@@ -114,7 +114,7 @@ def render_upload_analysis():
 
     if numeric_cols:
 
-        st.subheader("📈 Numeric Statistics")
+        st.subheader(" Numeric Statistics")
 
         st.dataframe(
             df[numeric_cols].describe(),
@@ -162,7 +162,7 @@ def render_upload_analysis():
 
     if len(numeric_cols) >= 2:
 
-        st.subheader("🔥 Correlation Heatmap")
+        st.subheader(" Correlation Heatmap")
 
         corr = (
             df[numeric_cols]
@@ -186,7 +186,7 @@ def render_upload_analysis():
 
     if numeric_cols:
 
-        st.subheader("📊 Distribution Analysis")
+        st.subheader(" Distribution Analysis")
 
         selected_num = st.selectbox(
             "Choose Numeric Column",
@@ -217,7 +217,7 @@ def render_upload_analysis():
 
     if cat_cols:
 
-        st.subheader("🏷 Category Analysis")
+        st.subheader(" Category Analysis")
 
         selected_cat = st.selectbox(
             "Choose Category Column",
@@ -253,7 +253,7 @@ def render_upload_analysis():
     # CHURN PREDICTION
     # ==========================================
 
-    st.subheader("🤖 ML Prediction")
+    st.subheader(" ML Prediction")
 
     missing_features = [
         col
@@ -289,7 +289,7 @@ def render_upload_analysis():
             )
 
             st.download_button(
-                "📥 Download Predictions",
+                " Download Predictions",
                 result_df.to_csv(
                     index=False
                 ),
@@ -313,7 +313,7 @@ def render_upload_analysis():
     # AUTO INSIGHTS
     # ==========================================
 
-    st.subheader("💡 Automated Insights")
+    st.subheader(" Automated Insights")
 
     st.write(
         f"""
