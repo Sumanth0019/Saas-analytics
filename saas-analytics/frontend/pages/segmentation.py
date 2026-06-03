@@ -8,7 +8,7 @@ from ml.segmentation import customer_segmentation
 def render_segmentation():
 
     st.title(
-        "🎯 Customer Segmentation"
+        " Customer Segmentation"
     )
 
     df = get_customers()
@@ -130,7 +130,7 @@ def render_segmentation():
     )
 
     st.download_button(
-        "📥 Export Segments",
+        " Export Segments",
         display_df.to_csv(
             index=False
         ),
