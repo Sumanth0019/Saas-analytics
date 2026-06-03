@@ -11,7 +11,7 @@ def render_sidebar():
 
         st.markdown(
             """
-            ## 📊 SaaS Analytics
+            ##  SaaS Analytics
 
             <div style="color:#94a3b8;">
                 Business Intelligence Platform
@@ -55,21 +55,21 @@ def render_sidebar():
         page = st.radio(
             "Navigation",
             [
-                "📈 Dashboard",
+                " Dashboard",
 
-                "📂 Upload & Analyze",
+                " Upload & Analyze",
 
-                "👥 Customer Analytics",
+                " Customer Analytics",
 
-                "🔮 Churn Prediction",
+                " Churn Prediction",
 
-                "🎯 Segmentation",
+                " Segmentation",
 
-                "🔄 Retention Cohort",
+                " Retention Cohort",
 
-                "👤 Profile",
+                " Profile",
 
-                "⚙️ Settings"
+                " Settings"
             ],
             label_visibility="collapsed"
         )
